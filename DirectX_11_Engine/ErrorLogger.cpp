@@ -4,7 +4,7 @@
 void ErrorLogger::Log(std::string message)
 {
 	std::string error_message = "Error: " + message;
-	MessageBoxA(NULL, error_message.c_str, "Error", MB_ICONERROR);
+	MessageBoxA(NULL, error_message.c_str(), "Error", MB_ICONERROR);
 }
 
 void ErrorLogger::Log(HRESULT hr, std::string message)
