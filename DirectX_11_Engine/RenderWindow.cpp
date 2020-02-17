@@ -41,6 +41,11 @@ bool RenderWindow::Initialize(HINSTANCE hInstance, std::string window_title, std
 	return true;
 }
 
+bool RenderWindow::ProcessMessages()
+{
+	return false;
+}
+
 RenderWindow::~RenderWindow()
 {
 	if (this->handle != NULL)
