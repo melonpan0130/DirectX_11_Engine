@@ -20,7 +20,7 @@ bool RenderWindow::Initialize(HINSTANCE hInstance, std::string window_title, std
 		, 0 // Window X position
 		, 0 // Window Y position
 		, this->width // Window width
-		, this->height // Window hight
+		, this->height // Window height
 		, NULL // Handle to parent of this window. - It has no parent window.
 		, NULL // Handle to menu or child window identifier. - It has no menu.
 		, this->hInstance // Handle to the instance of module to be used with this window.
