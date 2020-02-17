@@ -43,7 +43,31 @@ bool RenderWindow::Initialize(HINSTANCE hInstance, std::string window_title, std
 
 bool RenderWindow::ProcessMessages()
 {
-	return false;
+	// Handle the windows messages.
+	MSG msg;
+	ZeroMemory(&msg, sizeof(MSG)); // Initialize the message structure.
+
+	if (PeekMessage(&msg // Where to store message (if one exites)
+		, this->handle // Handle to window we are checking messages for
+		, 0 // Minimum Filter Msg Value - We are not filtering for specific messages.
+		, 0 // Maximum Filter Msg Value
+		, PM_REMOVE)) // Remove Message after capturing it via PeekMessage.
+	{
+		TranslateMessage(&msg); // Translate message from virtual key messages into character messages so we can
+		DispatchMessage(&msg); // Dispatch message to our Window Proc for this window.
+	}
+
+	// Check if the window was closed.
+	if (msg.message == WM_NULL)
+	{
+		if (!IsWindow(this->handle))
+		{
+			this->handle = NULL; // Message processing loop takes care of destroying this window.
+			UnregisterClass(this->window_class_wide.c_str(), this->hInstance);
+			return false;
+		}
+	}
+	return true;
 }
 
 RenderWindow::~RenderWindow()

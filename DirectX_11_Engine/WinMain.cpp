@@ -10,8 +10,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance
 {
 	RenderWindow rw;
 	rw.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
-	while (true) {
-		Sleep(50);
+	while (rw.ProcessMessages())
+	{
+
 	}
 	return 0;
 }
