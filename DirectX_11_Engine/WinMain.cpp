@@ -1,5 +1,4 @@
-// #include <Windows.h>
-#include "ErrorLogger.h"
+#include "RenderWindow.h"
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "DirectXTK.lib")
 
@@ -9,14 +8,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance
 					, _In_ LPWSTR lpCmdLine
 					, _In_ int nCmdShow)
 {
-	HRESULT hr = S_OK;
-	if (SUCCEEDED(hr))
-	{
-		MessageBoxA(NULL, "SUCCESS", "SUCCESS", NULL);
-	}
-	if (FAILED(hr)) 
-	{
-		ErrorLogger::Log(hr, "Test Message");
+	RenderWindow rw;
+	rw.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
+	while (true) {
+		Sleep(50);
 	}
 	return 0;
 }
