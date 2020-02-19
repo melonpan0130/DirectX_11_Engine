@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Keyboard">
+      <UniqueIdentifier>{f43d7c1f-dc5a-4b8d-a86c-dee56abad45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Keyboard">
+      <UniqueIdentifier>{78bc2bc1-656d-4e66-9c0b-ae75f566efef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -33,6 +39,9 @@
     <ClCompile Include="WindowContainer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="KeyboardClass.cpp">
+      <Filter>소스 파일\Keyboard</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StringConverter.h">
@@ -49,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="WindowContainer.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEvent.h">
+      <Filter>헤더 파일\Keyboard</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

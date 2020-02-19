@@ -9,3 +9,8 @@ bool Engine::ProcessMessages()
 {
 	return this->render_window.ProcessMessages();
 }
+
+void Engine::Update()
+{
+
+}
