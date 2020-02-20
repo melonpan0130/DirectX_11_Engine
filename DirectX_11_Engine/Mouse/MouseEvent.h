@@ -15,6 +15,7 @@ public:
 		, LRelease
 		, RPress
 		, RRelease
+		, MPress
 		, MRelease
 		, WheelUp
 		, WheelDown
