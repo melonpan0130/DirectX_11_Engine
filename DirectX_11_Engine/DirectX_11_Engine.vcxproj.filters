@@ -39,10 +39,10 @@
     <ClCompile Include="WindowContainer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="KeyboardEvent.cpp">
+    <ClCompile Include="Keyboard\KeyboardClass.cpp">
       <Filter>소스 파일\Keyboard</Filter>
     </ClCompile>
-    <ClCompile Include="KeyboardClass.cpp">
+    <ClCompile Include="Keyboard\KeyboardEvent.cpp">
       <Filter>소스 파일\Keyboard</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,10 +62,10 @@
     <ClInclude Include="WindowContainer.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="KeyboardEvent.h">
+    <ClInclude Include="Keyboard\KeyboardClass.h">
       <Filter>헤더 파일\Keyboard</Filter>
     </ClInclude>
-    <ClInclude Include="KeyboardClass.h">
+    <ClInclude Include="Keyboard\KeyboardEvent.h">
       <Filter>헤더 파일\Keyboard</Filter>
     </ClInclude>
   </ItemGroup>

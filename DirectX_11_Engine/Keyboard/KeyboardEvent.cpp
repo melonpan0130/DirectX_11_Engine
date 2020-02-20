@@ -22,7 +22,7 @@ bool KeyboardEvent::IsRelease() const
 
 bool KeyboardEvent::IsValid() const
 {
-	return this->type == EventType::Invalid;
+	return this->type != EventType::Invalid;
 }
 
 unsigned char KeyboardEvent::GetKeyCode() const
