@@ -15,15 +15,19 @@ void Engine::Update()
 	while (!keyboard.CharBufferIsEmpty())
 	{
 		unsigned char ch = keyboard.ReadChar();
+		/*
 		std::string outmsg = "Char: ";
 		outmsg += ch;
 		outmsg += "\n";
 		OutputDebugStringA(outmsg.c_str());
+		*/
 	}
+
 	while (!keyboard.KeyBufferIsEmpty())
 	{
 		KeyboardEvent kbe = keyboard.ReadKey();
 		unsigned char keycode = kbe.GetKeyCode();
+		/*
 		std::string outmsg = "";
 		if (kbe.IsPress()) 
 		{
@@ -35,6 +39,17 @@ void Engine::Update()
 		}
 		outmsg += keycode;
 		outmsg += "\n";
+		OutputDebugStringA(outmsg.c_str());
+		*/
+	}
+
+	while (!mouse.EventBufferIsEmpty())
+	{
+		MouseEvent me = mouse.ReadEvent();
+		std::string outmsg = "X: ";
+		outmsg += std::to_string(me.GetPosX());
+		outmsg += ", Y: ";
+		outmsg += std::to_string(me.GetPosY());
 		OutputDebugStringA(outmsg.c_str());
 	}
 }
