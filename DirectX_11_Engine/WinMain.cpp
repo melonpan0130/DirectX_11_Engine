@@ -12,6 +12,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance
 	engine.Initialize(hInstance, "Title", "MyWindowClass", 800, 600);
 	while (engine.ProcessMessages() == true)
 	{
+		printf("hello");
+		OutputDebugStringA("hello2");
 		engine.Update();
 	}
 	return 0;
