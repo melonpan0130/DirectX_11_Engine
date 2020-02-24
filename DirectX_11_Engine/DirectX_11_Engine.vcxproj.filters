@@ -25,6 +25,12 @@
     <Filter Include="소스 파일\Mouse">
       <UniqueIdentifier>{62765c77-c094-4b06-9cd3-af01db26fb41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Graphics">
+      <UniqueIdentifier>{7f4ef749-b729-4f6b-9d91-7f96741cf66b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Graphics">
+      <UniqueIdentifier>{256407bb-7e77-48a0-b537-a2397ee47285}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -57,6 +63,9 @@
     <ClCompile Include="Mouse\MouseEvent.cpp">
       <Filter>소스 파일\Mouse</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StringConverter.h">
@@ -85,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Mouse\MouseClass.h">
       <Filter>헤더 파일\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>헤더 파일\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
