@@ -63,7 +63,7 @@
     <ClCompile Include="Mouse\MouseEvent.cpp">
       <Filter>소스 파일\Mouse</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics.cpp">
+    <ClCompile Include="Graphics\Graphics.cpp">
       <Filter>소스 파일\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,7 +95,7 @@
     <ClInclude Include="Mouse\MouseClass.h">
       <Filter>헤더 파일\Mouse</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
+    <ClInclude Include="Graphics\Graphics.h">
       <Filter>헤더 파일\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
