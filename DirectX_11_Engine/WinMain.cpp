@@ -15,3 +15,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance
 	}
 	return 0;
 }
+
+// Input Assembler
+// Vertex Shader
+// Rasterizer
+// Pixel Shader
+// Output Merger
