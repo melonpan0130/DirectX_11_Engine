@@ -13,6 +13,7 @@ public:
 					, int width
 					, int height);
 	bool ProcessMessages();
+	HWND GetHWND() const;
 	~RenderWindow();
 
 private:
