@@ -66,16 +66,13 @@
     <ClCompile Include="Graphics\Graphics.cpp">
       <Filter>소스 파일\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\AdapterRender.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ADAPTERRENDER.CPP">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics\Vertex.cpp">
       <Filter>소스 파일\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\VertexShader.cpp">
+    <ClCompile Include="Graphics\Shaders.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AdapterRender.cpp">
       <Filter>소스 파일\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,13 +107,13 @@
     <ClInclude Include="Graphics\Graphics.h">
       <Filter>헤더 파일\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\AdapterRender.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\Vertex.h">
       <Filter>헤더 파일\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\VertexShader.h">
+    <ClInclude Include="Graphics\Shaders.h">
+      <Filter>헤더 파일\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AdapterRender.h">
       <Filter>헤더 파일\Graphics</Filter>
     </ClInclude>
   </ItemGroup>

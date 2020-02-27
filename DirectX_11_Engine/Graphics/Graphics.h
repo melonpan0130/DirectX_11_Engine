@@ -1,6 +1,6 @@
 #pragma once
 #include "AdapterRender.h"
-#include "VertexShader.h"
+#include "Shaders.h"
 
 class Graphics
 {

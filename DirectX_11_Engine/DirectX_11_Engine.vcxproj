@@ -152,7 +152,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ADAPTERRENDER.CPP" />
     <ClCompile Include="Graphics\AdapterRender.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="ErrorLogger.cpp" />
@@ -162,7 +161,7 @@
     <ClCompile Include="Mouse\MouseClass.cpp" />
     <ClCompile Include="Mouse\MouseEvent.cpp" />
     <ClCompile Include="RenderWindow.cpp" />
-    <ClCompile Include="Graphics\VertexShader.cpp" />
+    <ClCompile Include="Graphics\Shaders.cpp" />
     <ClCompile Include="StringConverter.cpp" />
     <ClCompile Include="Graphics\Vertex.cpp" />
     <ClCompile Include="WindowContainer.cpp" />
@@ -178,7 +177,7 @@
     <ClInclude Include="Mouse\MouseClass.h" />
     <ClInclude Include="Mouse\MouseEvent.h" />
     <ClInclude Include="RenderWindow.h" />
-    <ClInclude Include="Graphics\VertexShader.h" />
+    <ClInclude Include="Graphics\Shaders.h" />
     <ClInclude Include="StringConverter.h" />
     <ClInclude Include="Graphics\Vertex.h" />
     <ClInclude Include="WindowContainer.h" />
