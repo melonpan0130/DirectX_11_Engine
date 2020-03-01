@@ -10,7 +10,7 @@ bool VertexShader::Initialize(Microsoft::WRL::ComPtr<ID3D11Device>& device, std:
 		ErrorLogger::Log(hr, errorMsg);
 		return false;
 	}
-
+	
 	hr = device->CreateVertexShader(this->shader_buffer.Get()->GetBufferPointer(), this->shader_buffer->GetBufferSize(), NULL, this->shader.GetAddressOf());
 	if (FAILED(hr))
 	{
@@ -20,6 +20,7 @@ bool VertexShader::Initialize(Microsoft::WRL::ComPtr<ID3D11Device>& device, std:
 		return false;
 	}
 	return true;
+	
 }
 
 ID3D11VertexShader* VertexShader::GetShader()

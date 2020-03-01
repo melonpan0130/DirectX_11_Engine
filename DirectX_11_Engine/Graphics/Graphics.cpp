@@ -104,6 +104,7 @@ bool Graphics::InitializeShaders()
 		, this->vertexshader.GetBuffer()->GetBufferPointer()
 		, this->vertexshader.GetBuffer()->GetBufferSize()
 		, this->inputLayout.GetAddressOf());
+
 	if (FAILED(hr)) // If error occured
 	{
 		ErrorLogger::Log(hr, "Failed to create input layout.");
